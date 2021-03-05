@@ -1,39 +1,5 @@
 struct Solution;
 impl Solution {
-    // pub fn merge_alternately(word1: String, word2: String) -> String {
-    //     let (mut i, mut j) = (0,0);
-    //     let mut res = String::new();
-    //     let (mut word1, mut word2) = (word1.chars().collect::<Vec<_>>(), word2.chars().collect::<Vec<_>>());
-
-    //     loop {
-    //         match (word1.get(i), word2.get(j)){
-    //             (Some(a), Some(b)) => {
-    //                 if a > b {
-    //                     res.push(*b);
-    //                     j += 1;
-    //                 }else {
-    //                     res.push(*a);
-    //                     i += 1;
-    //                 }
-    //                 dbg!(a, b, &res);
-    //             },
-    //             (None, Some(b)) => {
-    //                 res.push(*b);
-    //                 j += 1;
-    //                 dbg!( b, &res);
-
-    //             },
-    //             (Some(a),None) => {
-    //                 res.push(*a);
-    //                 i += 1;
-    //                 dbg!(a,  &res);
-
-    //             },
-    //             (None, None) => {break;},
-    //         }
-    //     }
-    //     return res;
-    // }
     pub fn merge_alternately(word1: String, word2: String) -> String {
         let mut res = String::new();
 
